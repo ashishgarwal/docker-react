@@ -20,5 +20,5 @@ script:
     bucket_path:  "My Web App"
     on:
       branch: master
-    access_key_id: $AWS_ACCESS_KEY
-    secret_access_key: $AWS_SECRET_KEY
+    access_key_id: "$AWS_ACCESS_KEY"
+    secret_access_key: "$AWS_SECRET_KEY"
