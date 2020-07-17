@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t ashishgarwal/docker-react -f Dockerfile.dev .
+  - docker build -t ashishgarwal/docker-react .
 
 script:
   - docker container run -d -e CI=true ashishgarwal/docker-react
