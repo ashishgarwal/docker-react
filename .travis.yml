@@ -13,11 +13,11 @@ script:
 
 deploy:
   provier: elasticbeanstalk
-  region: "us-east-1"
-  app: "My Web App"
-  env: "MyWebApp-env"
-  bucket_name: "elasticbeanstalk-us-east-1-853673960985"
-  bucket_path:  "My Web App"
+  region: "ap-south-1"
+  app: "MyWebApp"
+  env: "Mywebapp-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-853673960985"
+  bucket_path:  "MyWebApp"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY"
