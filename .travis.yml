@@ -10,7 +10,7 @@ before_install:
 
 script:
   - docker container run -d -e CI=true ashishgarwal/docker-react
-after_install:
+after_success:
   # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push the image to docker 
