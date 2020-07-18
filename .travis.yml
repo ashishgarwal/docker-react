@@ -14,7 +14,7 @@ after_success:
   # Log in to docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push the image to docker 
-  docker push ashishgarwal/docker-react
+  - docker push ashishgarwal/docker-react
 #deploy:
 #  provier: elasticbeanstalk
 #  region: "ap-south-1"
