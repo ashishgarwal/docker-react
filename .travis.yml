@@ -15,14 +15,14 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # push the image to docker 
   - docker push ashishgarwal/docker-react
-#deploy:
-#  provier: elasticbeanstalk
-#  region: "ap-south-1"
-#  app: "MyWebApp"
-#  env: "Mywebapp-env"
-#  bucket_name: "elasticbeanstalk-ap-south-1-853673960985"
-#  bucket_path:  "MyWebApp"
-#  on:
-#    branch: master
-#  access_key_id: "$AWS_ACCESS_KEY"
-#  secret_access_key: "$AWS_SECRET_KEY"
+deploy:
+  provier: elasticbeanstalk
+  region: "ap-south-1"
+  app: "MyWebApp"
+  env: "Mywebapp-env"
+  bucket_name: "elasticbeanstalk-ap-south-1-853673960985"
+  bucket_path:  "MyWebApp"
+  on:
+    branch: master
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
